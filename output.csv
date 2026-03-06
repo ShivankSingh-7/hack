@@ -1,0 +1,23 @@
+ID,Bug Line,Explanation
+16,1,Should use VTT mode instead of VECD when copyLabel() is used for the label.
+32,4,"Bug at line 4: rdi.port(TA::MULTI_PORT).func()
+This function allows multi-port labels to be combined to form a new burst. It is used for
+dynamic mode in the func() class only.Multi-port burst with .port(TA::MULTI_PO"
+25,5,"RDI_END is called before RDI_BEGIN, inverting the lifecycle order which causes runtime failures."
+10,2,Function name typo - should be readHumSensor() instead of readHumanSeniority().
+26,8,Incorrect casing - should use iMeas() with capital M.
+23,25,Wrong method order - should be smartVec().burstUpload() not burstUpload.smartVec().
+4,3,iClamp parameters are reversed - low and high values should be swapped.
+31,5,Incorrect method name - should use push_back() instead of push_forward().
+17,8,Wrong getter method - should use getFFV() to get first fail vector.
+27,2,Incorrect casing - should use iMeas() with capital M.
+24,3,Pin name mismatch - using D0 (digit zero) for capture but DO (letter O) for retrieval.
+14,7,Missing required parameter - getAlarmValue() requires a pin name parameter.
+9,3,Duplicate end() call - should use node().end() instead of end().end().
+13,3,"Function name contains typo - should be getVector(), getValue(), or getWaveform()."
+22,3,Extra parameter provided - readTempThresh() takes no parameters.
+29,1,Retrieving status before execute() completion - move status check outside RDI block.
+2,3,vForceRange set to 35V which exceeds the maximum allowed range for AVI64.
+20,5,Sample count exceeds maximum - should be 8192 or less.
+11,2,Method name typo - should be iMeas() or vMeas() instead.
+3,4,vForce value (31V) exceeds the vForceRange (30V) causing range overflow.
